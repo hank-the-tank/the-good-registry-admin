@@ -1,0 +1,2 @@
+DROP SCHEMA IF EXISTS schemas;
+DROP TABLE IF EXISTS orders;
