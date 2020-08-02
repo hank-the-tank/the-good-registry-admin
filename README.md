@@ -7,11 +7,11 @@ $ go run *.go
 ## DB - Version
 1. Update db version
 ```  
-migrate -source file://migrations -database "postgres://hank:password@localhost:5432/the_good_registry?sslmode=disable" up 1   
+$ migrate -source file://migrations -database "postgres://hank:password@localhost:5432/the_good_registry?sslmode=disable" up 1   
 ```
 2. Downgrade db version
 ```
-migrate -source file://migrations -database "postgres://hank:password@localhost:5432/the_good_registry?sslmode=disable" down 1 
+$ migrate -source file://migrations -database "postgres://hank:password@localhost:5432/the_good_registry?sslmode=disable" down 1 
 ```
 
 
