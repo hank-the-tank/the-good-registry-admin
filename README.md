@@ -1,3 +1,11 @@
+# About
+This is a project that aims to build an admin for [The Good Registry](https://thegoodregistry.com/) to manage their orders efficiently. 
+
+### How it works
+1. Fetch email from Gmail to get the gift codes 
+2. List all the orders and manage the orders
+3. A tool to generate gift cards for the customer who prefers to print the gift cards as a gift to the receiver
+
 # Start
 1. Run the app
 ```
