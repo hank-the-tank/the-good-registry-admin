@@ -14,8 +14,8 @@ CREATE TABLE IF NOT EXISTS customers(
 CREATE TABLE IF NOT EXISTS orders (
   id INT GENERATED ALWAYS AS IDENTITY, 
   customer_id INT, 
-  email VARCHAR(255),
   volume INT NOT NULL,
+  amount INT NOT NULL,
   created TIMESTAMP NOT NULL,
   PRIMARY KEY(id),
   CONSTRAINT fk_customer
@@ -37,3 +37,7 @@ COMMIT;
 SELECT version();
 
 -- INSERT INTO orders (id, customer_name, email, volume, created) VALUES (2, 'Hank', 'hank@sharesies.co.nz', 4, '2020-08-01 00:00:00.000000');
+
+
+-- Insert a customer
+-- INSERT INTO customers (first_name, last_name, preferred_name, email, phone, company, created) VALUES ('Szu Han', 'Chou', 'Hank', 'hank.likes.matcha@gmail.com', '02108220352', 'sharesies', '2020-08-02 13:00:00'

@@ -15,7 +15,8 @@ const (
 	dbname   = "the_good_registry"
 )
 
-func db() {
+// Connection for the app
+func Connection() {
 	psqlInfo := fmt.Sprintf("host=%s port=%d user=%s "+
 		"password=%s dbname=%s sslmode=disable",
 		host, port, user, password, dbname)
